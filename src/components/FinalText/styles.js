@@ -12,12 +12,13 @@ export const TextArea = styled.div`
 
     font-family: 'Poppins', sans-serif;
 
-    background-color: ${colors.grey};
+    
     width: 100%;
 
     span{
         font-weight: 600;
         color: ${colors.green};
+        margin-right: 0.3rem;
     }
    
 

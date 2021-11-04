@@ -22,7 +22,6 @@ function App() {
       afetados: "",
       rel: ""
   })
-
   
   const [showFinText, setShowFinText] = useState(false)
 

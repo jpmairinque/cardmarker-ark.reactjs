@@ -15,9 +15,32 @@ const FInalText = ({finText}) => {
                 <li>{finText.cel}</li>
                 <li>{finText.vers}</li>
             </ul>
-            <br/>
+          
             {finText.reprod && <><span>Como reproduzir o problema: </span> 
             <p>{finText.reprod}</p>
+            <br/></>}
+            {finText.link && <><span>Link para gravação do problema: </span> {finText.link}
+            <br/></>}
+            {finText.base && <><span>Base: </span> {finText.base}
+            <br/></>}
+            {finText.user && <><span>Usuário: </span> {finText.user}
+            <br/></>}
+            {finText.login && <><span>Login: </span> {finText.login}
+            <br/></>}
+            {finText.senha && <><span>Senha: </span> {finText.senha}
+            <br/></>}
+            <br/>
+            {finText.esperado && <><span>Comportamento esperado: </span> 
+            <p>{finText.esperado}</p>
+            <br/></>}
+            {finText.atual && <><span>Comportamento atual: </span> 
+            <p>{finText.atual}</p>
+            <br/></>}
+            {finText.afetados && <><span>Clientes afetados: </span> 
+            <p>{finText.afetados}</p>
+            <br/></>}
+            {finText.rel && <><span>Módulos relacionados: </span> 
+            <p>{finText.rel}</p>
             <br/></>}
         </S.TextArea>
     )
