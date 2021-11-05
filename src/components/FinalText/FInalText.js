@@ -5,6 +5,10 @@ const FInalText = ({finText}) => {
 
     return (
         <S.TextArea id="textbox">
+            <h3>Informações iniciais (Suporte N1):</h3>
+            {finText.resp && <><span>Responsável pela abertura do card: </span> 
+            {finText.desc}
+            <br/></>}
             {finText.desc && <><span>Descrição do problema: </span> 
             <p>{finText.desc}</p>
             <br/></>}
@@ -42,6 +46,15 @@ const FInalText = ({finText}) => {
             {finText.rel && <><span>Módulos relacionados: </span> 
             <p>{finText.rel}</p>
             <br/></>}
+
+            <h3>Informações complementares (Suporte N2):</h3>
+            <ul>
+                <li>C5: precisa ser feito na hora</li>
+                <li>C4: precisa ser feito no dia</li>
+                <li>C3: precisa ser feito na sprint atual</li>
+                <li>C2: precisa ser feito na próxima sprint</li>
+                <li>C1: executado quando sobrar tempo</li>
+            </ul>
         </S.TextArea>
     )
 }
