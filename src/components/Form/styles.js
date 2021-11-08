@@ -65,7 +65,7 @@ export const BotaoGerar = styled.button`
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  align-self: flex-end;
+  margin: 2rem;
 `;
 
 export const FlexWrapper = styled.div`

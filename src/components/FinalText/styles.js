@@ -17,7 +17,7 @@ export const TextArea = styled.div`
 
     span{
         font-weight: 600;
-        color: ${colors.grey};
+        
         margin-right: 0.3rem;
     }
    

@@ -13,24 +13,25 @@ const FInalText = ({finText, setShowFinText}) => {
         <>
         <S.BotaoGerar onClick={()=>setShowFinText(false)}>Voltar</S.BotaoGerar>
         <S.TextArea id="textbox">
-            <h3>Informações iniciais (Suporte N1):</h3>
+            <h3>Informações iniciais (Suporte N1):</h3><br/>
             {finText.resp && <><span>Responsável pela abertura do card: </span> 
             {finText.desc}
-            <br/><br></br></>}
-            {finText.desc && <><span>Descrição do problema: </span> 
-            <p>{finText.desc}</p>
+            <br/><br/></>}
+            {finText.desc && <><span>Descrição do problema: </span> <br/><br/>
+            {finText.desc}<br/><br/>
             </>}
-            <span>Condicoes de teste:</span>
+            {finText.nav && <>  <span>Condicoes de teste:</span><br/>
             <ul>
                 <li>{finText.nav}</li>
                 <li>{finText.os}</li>
                 <li>{finText.cel}</li>
-                <li>{finText.vers}</li>
-            </ul>
+                {finText.vers && <li>{finText.vers}</li>}
+            </ul></>}
+           
           
-            {finText.reprod && <><span>Como reproduzir o problema: </span> 
-            <p>{finText.reprod}</p>
-            <br/></>}
+            {finText.reprod && <><span>Como reproduzir o problema: </span> <br/><br/>
+           {finText.reprod}<br/><br/>
+            </>}
             {finText.link && <><span>Link para gravação do problema: </span> {finText.link}
             <br/></>}
             {finText.base && <><span>Base: </span> {finText.base}
@@ -42,38 +43,38 @@ const FInalText = ({finText, setShowFinText}) => {
             {finText.senha && <><span>Senha: </span> {finText.senha}
             <br/></>}
             <br/>
-            {finText.esperado && <><span>Comportamento esperado: </span> 
-            <p>{finText.esperado}</p>
+            {finText.esperado && <><span>Comportamento esperado: </span> <br/><br/>
+            {finText.esperado}<br/>
             <br/></>}
-            {finText.atual && <><span>Comportamento atual: </span> 
-            <p>{finText.atual}</p>
+            {finText.atual && <><span>Comportamento atual: </span> <br/><br/>
+            {finText.atual}<br/>
             <br/></>}
-            {finText.afetados && <><span>Clientes afetados: </span> 
-            <p>{finText.afetados}</p>
+            {finText.afetados && <><span>Clientes afetados: </span> <br/><br/>
+            {finText.afetados}<br/>
             <br/></>}
-            {finText.rel && <><span>Módulos relacionados: </span> 
-            <p>{finText.rel}</p>
+            {finText.rel && <><span>Módulos relacionados: </span> <br/><br/>
+            {finText.rel}<br/>
             <br/></>}
 
-            <h3>Informações complementares (Suporte N2):</h3>
+            =========================================================================================<br/><br/><h3>Informações complementares (Suporte N2):</h3><br/>
             <ul>
                 <li>{finText.complex}: {complex[finText.complex]}</li>                
-            </ul>
+            </ul><br/>
 
             {finText.juspri && <><span>Justificativa de priopridade: </span> {finText.juspri}
-            <br/></>}
+            <br/><br/></>}
             {finText.jusco && <><span>Justificativa da correção: </span> {finText.jusco}
-            <br/></>}
+            <br/><br/></>}
             {finText.jusre1 && <><span>Justificativa da recusa: </span> {finText.jusre1}
-            <br/></>}
+            <br/><br/></>}
             
-            <h3>Informações de prazo (PM):</h3>
-            {finText.juspri && <><span>Prazo estimado e justificativa: </span> {finText.juspri}
-            <br/></>}
-            {finText.jusco && <><span>Link para acompanhamento: </span> {finText.jusco}
-            <br/></>}
-            {finText.jusre1 && <><span>Justificativa da recusa: </span> {finText.jusre1}
-            <br/></>}
+            {finText.prazo && <><br/>=========================================================================================<br/><br/><h3>Informações de prazo (PM):</h3><br/></>}
+            {finText.prazo && <><span>Prazo estimado e justificativa: </span> {finText.prazo}
+            <br/><br/></>}
+            {finText.link2 && <><span>Link para acompanhamento: </span> {finText.link2}
+            <br/><br/></>}
+            {finText.jusre2 && <><span>Justificativa da recusa: </span> {finText.jusre2}
+            <br/><br/></>}
 
         </S.TextArea>
         </>
