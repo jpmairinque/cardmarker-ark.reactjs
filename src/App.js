@@ -22,7 +22,14 @@ function App() {
       esperado: "",
       atual: "",
       afetados: "",
-      rel: ""
+      rel: "",
+      juspri: "",
+      jusco: "",
+      jusre1: "",
+      prazo: "",
+      link2: "",
+      jusre2: "",
+      complex: ""
   })
   
   const [showFinText, setShowFinText] = useState(false)
@@ -37,7 +44,7 @@ function App() {
       {!showFinText ? (
       <Form data={data} setData={setData} handleSubmit={handleSubmit}/>
       ) : (
-        <FInalText finText={data}/> 
+        <FInalText setShowFinText = {setShowFinText} finText={data}/> 
       )}
     </div>
   );

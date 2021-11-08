@@ -16,27 +16,16 @@ export const Wrapper = styled.div`
 
     img{
         width: 200px;
+        padding: 2rem;
     }
 
 
 `
 
-export const TextInput = styled.textarea`
-  background-color: ${colors.grey};
-  height: 20px;
-
-  font-family: "Roboto";
-  border: none;
-  border-radius: 15px;
-  padding: 2rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-`;
-
 export const SmallInput = styled.input`
   background-color: ${colors.grey};
   height: 30px;
-
+  font-family: 'Poppins';
   border: none;
   border-radius: 5px;
   padding: 5px;
@@ -48,6 +37,9 @@ export const InputWrapper = styled.div`
   width: 80%;
   font-family: "Poppins", sans-serif !important;
 
+  h2{
+    color: ${colors.green};
+  }
   h3 {
     color: ${colors.green};
     font-size: 1.3rem;
@@ -56,6 +48,10 @@ export const InputWrapper = styled.div`
 
   div{
       margin-bottom: 0.5rem;
+  }
+
+  li{
+    list-style: none;
   }
 `;
 
@@ -90,5 +86,20 @@ export const IconLine = styled.div`
         margin-right: 0.5rem;
     }
 
+
+`
+
+export const InfoBox = styled.div`
+
+    font-family: 'Poppins';
+    width: 80%;
+
+    span{
+      color: ${colors.green};
+      font-weight: 600;
+    }
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
 `

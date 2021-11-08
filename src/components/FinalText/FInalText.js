@@ -1,17 +1,25 @@
 import React from 'react'
 import * as S from './styles'
-const FInalText = ({finText}) => {
+const FInalText = ({finText, setShowFinText}) => {
+
+    const complex = {C5: "precisa ser feito na hora",
+        C4: "precisa ser feito no dia",
+        C3: "precisa ser feito na sprint atual",
+        C2: "precisa ser feito na próxima sprint",
+        C1: "executado quando sobrar tempo"}
   
 
     return (
+        <>
+        <S.BotaoGerar onClick={()=>setShowFinText(false)}>Voltar</S.BotaoGerar>
         <S.TextArea id="textbox">
             <h3>Informações iniciais (Suporte N1):</h3>
             {finText.resp && <><span>Responsável pela abertura do card: </span> 
             {finText.desc}
-            <br/></>}
+            <br/><br></br></>}
             {finText.desc && <><span>Descrição do problema: </span> 
             <p>{finText.desc}</p>
-            <br/></>}
+            </>}
             <span>Condicoes de teste:</span>
             <ul>
                 <li>{finText.nav}</li>
@@ -49,13 +57,26 @@ const FInalText = ({finText}) => {
 
             <h3>Informações complementares (Suporte N2):</h3>
             <ul>
-                <li>C5: precisa ser feito na hora</li>
-                <li>C4: precisa ser feito no dia</li>
-                <li>C3: precisa ser feito na sprint atual</li>
-                <li>C2: precisa ser feito na próxima sprint</li>
-                <li>C1: executado quando sobrar tempo</li>
+                <li>{finText.complex}: {complex[finText.complex]}</li>                
             </ul>
+
+            {finText.juspri && <><span>Justificativa de priopridade: </span> {finText.juspri}
+            <br/></>}
+            {finText.jusco && <><span>Justificativa da correção: </span> {finText.jusco}
+            <br/></>}
+            {finText.jusre1 && <><span>Justificativa da recusa: </span> {finText.jusre1}
+            <br/></>}
+            
+            <h3>Informações de prazo (PM):</h3>
+            {finText.juspri && <><span>Prazo estimado e justificativa: </span> {finText.juspri}
+            <br/></>}
+            {finText.jusco && <><span>Link para acompanhamento: </span> {finText.jusco}
+            <br/></>}
+            {finText.jusre1 && <><span>Justificativa da recusa: </span> {finText.jusre1}
+            <br/></>}
+
         </S.TextArea>
+        </>
     )
 }
 
