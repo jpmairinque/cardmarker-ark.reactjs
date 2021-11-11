@@ -15,7 +15,7 @@ const FInalText = ({finText, setShowFinText}) => {
         <S.TextArea id="textbox">
             <h3>Informações iniciais (Suporte N1):</h3><br/>
             {finText.resp && <><span>Responsável pela abertura do card: </span> 
-            {finText.desc}
+            {finText.resp}
             <br/><br/></>}
             {finText.desc && <><span>Descrição do problema: </span> <br/><br/>
             {finText.desc}<br/><br/>
