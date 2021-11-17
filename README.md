@@ -24,7 +24,6 @@ yarn start || npm start
 ## Tools used / *ferramentas utilizadas* 🛠
 - React JS
 - Styled Components
-- Context API
 - React Icons
 
 
