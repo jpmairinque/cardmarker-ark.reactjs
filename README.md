@@ -1,8 +1,8 @@
 # Ark CardMaker - ReactJS
 
-Esta aplicação é uma ferramenta prática para a geração do texto de descrição dos cards, que são o caminho para a organização de melhorias e bugs a serem resolvidos no sistema.
+Esta aplicação é uma ferramenta prática para a geração do texto de descrição dos cards, que são as tarefas de melhorias e bugs a serem resolvidos no sistema.
 
-// This app is a useful tool to generate the descriptive text of the cards, that are the pathway to organize the improvements and bugs to be solved on the system.
+// This app is a useful tool to generate the descriptive text of the cards, that are the tasks of improvements and bugs to be solved on the system.
 
 ## App Overview // *overview da aplicação* 💻
 
