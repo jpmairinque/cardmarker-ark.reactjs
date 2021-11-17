@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Ark CardMaker - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicação é uma ferramenta prática para a geração do texto de descrição dos cards, que são o caminho para a organização de melhorias e bugs a serem resolvidos no sistema.
+
+// This app is a useful tool to generate the descriptive text of the cards, that are the pathway to organize the improvements and bugs to be solved on the system.
 
 ## Available Scripts
 
