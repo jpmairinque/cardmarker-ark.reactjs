@@ -2,13 +2,7 @@ import React from 'react'
 import * as S from './styles'
 const FInalText = ({finText, setShowFinText}) => {
 
-    const complex = {C5: "precisa ser feito na hora",
-        C4: "precisa ser feito no dia",
-        C3: "precisa ser feito na sprint atual",
-        C2: "precisa ser feito na próxima sprint",
-        C1: "executado quando sobrar tempo"}
   
-
     return (
         <>
         <S.BotaoGerar onClick={()=>setShowFinText(false)}>Voltar</S.BotaoGerar>
@@ -32,7 +26,7 @@ const FInalText = ({finText, setShowFinText}) => {
             {finText.reprod && <><span>Como reproduzir o problema </span> <br/><br/>
            {finText.reprod}<br/><br/>
             </>}
-            {finText.link && <><span>Link para gravação do problema </span> {finText.link}
+            {finText.link && <><span>Link para gravação do problema: </span> {finText.link}
             <br/></>}
             {finText.base && <><span>Base: </span> {finText.base}
             <br/></>}
@@ -58,25 +52,29 @@ const FInalText = ({finText, setShowFinText}) => {
 
             =========================================================================================<br/><br/><h3>Informações complementares (Suporte N2):</h3><br/>
             <ul>
-                <li>{finText.complex}: {complex[finText.complex]}</li>                
+                <li>C5: precisa ser feito na hora</li>  
+                <li>C4: precisa ser feito no dia</li>   
+                <li>C3: precisa ser feito na sprint atual</li>   
+                <li>C2: precisa ser feito na próxima sprint</li>   
+                <li>C1: executado quando sobrar tempo</li>                 
             </ul><br/>
 
-            {finText.juspri && <><span>Justificativa de priopridade: </span> {finText.juspri}
-            <br/><br/></>}
-            {finText.jusco && <><span>Justificativa da correção: </span> {finText.jusco}
-            <br/><br/></>}
-            {finText.jusre1 && <><span>Justificativa da recusa: </span> {finText.jusre1}
-            <br/><br/></>}
+            <span>Justificativa de priopridade: </span> 
+            <br/><br/>
+             <span>Justificativa da correção: </span> 
+            <br/><br/>
+            <span>Justificativa da recusa: </span> 
+            <br/><br/>
             
-            {finText.prazo && <><br/>=========================================================================================<br/><br/><h3>Informações de prazo (PM):</h3><br/></>}
-            {finText.prazo && <><span>Prazo estimado e justificativa: </span> {finText.prazo}
-            <br/><br/></>}
-            {finText.link2 && <><span>Link para acompanhamento: </span> {finText.link2}
-            <br/><br/></>}
-            {finText.jusre2 && <><span>Justificativa da recusa: </span> {finText.jusre2}
-            <br/><br/></>}
+           <br/>=========================================================================================<br/><br/><h3>Informações de prazo (PM):</h3><br/>
+            <span>Prazo estimado e justificativa: </span> 
+            <br/><br/>
+           <span>Link para acompanhamento: </span> 
+            <br/><br/>
+            <span>Justificativa da recusa: </span> 
+            <br/><br/>
 
-        </S.TextArea>
+         </S.TextArea>
         </>
     )
 }

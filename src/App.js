@@ -23,13 +23,7 @@ function App() {
       atual: "",
       afetados: "",
       rel: "",
-      juspri: "",
-      jusco: "",
-      jusre1: "",
-      prazo: "",
-      link2: "",
-      jusre2: "",
-      complex: ""
+
   })
   
   const [showFinText, setShowFinText] = useState(false)

@@ -111,43 +111,8 @@ const Form = ({data, setData, handleSubmit}) => {
          
          </S.InputWrapper>
          
-         <S.FlexWrapper>
-         <S.InputWrapper>
-         <h3>Informações complementares (Suporte N2): </h3>
-            <ul>
-                <li><input name="c" type="radio" onChange={(e)=>{setData({...data,complex: "C5"})}}/>C5: precisa ser feito na hora</li>
-                <li><input name="c" type="radio" onChange={(e)=>{setData({...data,complex: "C4"})}}/>C4: precisa ser feito no dia</li>
-                <li><input name="c" type="radio" onChange={(e)=>{setData({...data,complex: "C3"})}}/>C3: precisa ser feito na sprint atual</li>
-                <li><input name="c" type="radio" onChange={(e)=>{setData({...data,complex: "C2"})}}/>C2: precisa ser feito na próxima sprint</li>
-                <li><input name="c" type="radio" onChange={(e)=>{setData({...data,complex: "C1"})}}/>C1: executado quando sobrar tempo</li>
-            </ul>
-            <div>
-           <span>Justificativa de prioridade:  </span><S.SmallInput onChange={(e)=>{setData({...data,juspri: e.target.value})}} value={data.juspri}/> 
-           </div>
-           <div>
-           <span>Justificativa da correção:  </span><S.SmallInput onChange={(e)=>{setData({...data,jusco: e.target.value})}} value={data.jusco}/>  
-           </div>
-           <div>
-           <span>Justificativa da recusa:  </span><S.SmallInput onChange={(e)=>{setData({...data,jusre1: e.target.value})}} value={data.jusre1}/>  
-           </div>
-           
-            </S.InputWrapper>
 
-            <S.InputWrapper>
-         <h3>Informações de prazo (PM):</h3>
-            
-            <div>
-           <span>Prazo estimado e justificativa:  </span><S.SmallInput onChange={(e)=>{setData({...data,prazo: e.target.value})}} value={data.prazo}/> 
-           </div>
-           <div>
-           <span>Link para acompanhamento:  </span><S.SmallInput onChange={(e)=>{setData({...data,link2: e.target.value})}} value={data.link2}/>  
-           </div>
-           <div>
-           <span>Justificativa da recusa:  </span><S.SmallInput onChange={(e)=>{setData({...data,jusre2: e.target.value})}} value={data.jusre2}/>  
-           </div>
-            
-            </S.InputWrapper>
-            </S.FlexWrapper>
+         
             <S.BotaoGerar onClick={handleSubmit}>Gerar</S.BotaoGerar>
        </S.Wrapper>
     )
