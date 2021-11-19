@@ -13,14 +13,14 @@ const FInalText = ({finText, setShowFinText}) => {
         <>
         <S.BotaoGerar onClick={()=>setShowFinText(false)}>Voltar</S.BotaoGerar>
         <S.TextArea id="textbox">
-            <h3>Informações iniciais (Suporte N1):</h3><br/>
+            <h3>Informações iniciais (Suporte N1)</h3><br/>
             {finText.resp && <><span>Responsável pela abertura do card: </span> 
             {finText.resp}
             <br/><br/></>}
-            {finText.desc && <><span>Descrição do problema: </span> <br/><br/>
+            {finText.desc && <><span>Descrição do problema </span> <br/><br/>
             {finText.desc}<br/><br/>
             </>}
-            {finText.nav && <>  <span>Condicoes de teste:</span><br/>
+            {finText.nav && <>  <span>Condicoes de teste</span><br/>
             <ul>
                 <li>{finText.nav}</li>
                 <li>{finText.os}</li>
@@ -29,10 +29,10 @@ const FInalText = ({finText, setShowFinText}) => {
             </ul></>}
            
           
-            {finText.reprod && <><span>Como reproduzir o problema: </span> <br/><br/>
+            {finText.reprod && <><span>Como reproduzir o problema </span> <br/><br/>
            {finText.reprod}<br/><br/>
             </>}
-            {finText.link && <><span>Link para gravação do problema: </span> {finText.link}
+            {finText.link && <><span>Link para gravação do problema </span> {finText.link}
             <br/></>}
             {finText.base && <><span>Base: </span> {finText.base}
             <br/></>}
@@ -43,16 +43,16 @@ const FInalText = ({finText, setShowFinText}) => {
             {finText.senha && <><span>Senha: </span> {finText.senha}
             <br/></>}
             <br/>
-            {finText.esperado && <><span>Comportamento esperado: </span> <br/><br/>
+            {finText.esperado && <><span>Comportamento esperado </span> <br/><br/>
             {finText.esperado}<br/>
             <br/></>}
-            {finText.atual && <><span>Comportamento atual: </span> <br/><br/>
+            {finText.atual && <><span>Comportamento atual </span> <br/><br/>
             {finText.atual}<br/>
             <br/></>}
-            {finText.afetados && <><span>Clientes afetados: </span> <br/><br/>
+            {finText.afetados && <><span>Clientes afetados </span> <br/><br/>
             {finText.afetados}<br/>
             <br/></>}
-            {finText.rel && <><span>Módulos relacionados: </span> <br/><br/>
+            {finText.rel && <><span>Módulos relacionados </span> <br/><br/>
             {finText.rel}<br/>
             <br/></>}
 

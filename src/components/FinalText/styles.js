@@ -11,7 +11,7 @@ const colors = {
 export const TextArea = styled.div`
 
     font-family: 'Poppins', sans-serif;
-
+    color: #4C4C4C;
     
     width: 100%;
 
