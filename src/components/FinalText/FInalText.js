@@ -58,7 +58,8 @@ const FInalText = ({finText, setShowFinText}) => {
                 <li>C2: precisa ser feito na próxima sprint</li>   
                 <li>C1: executado quando sobrar tempo</li>                 
             </ul><br/>
-
+            <span>Como reproduzir o bug no teste: </span> 
+            <br/><br/>
             <span>Justificativa de priopridade: </span> 
             <br/><br/>
              <span>Justificativa da correção: </span> 
