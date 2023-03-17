@@ -60,7 +60,7 @@ const FInalText = ({finText, setShowFinText}) => {
             </ul><br/>
             <span>Como reproduzir o bug no teste: </span> 
             <br/><br/>
-            <span>Justificativa de priopridade: </span> 
+            <span>Justificativa de prioridade: </span> 
             <br/><br/>
              <span>Justificativa da correção: </span> 
             <br/><br/>
